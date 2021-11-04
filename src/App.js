@@ -9,7 +9,7 @@ import SignUp from './components/pages/SignUp';
 function App() {
   return (
 <>
-<Router>
+<Router basename="/projects/trvl">
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />

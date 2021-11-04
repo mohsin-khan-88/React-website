@@ -58,7 +58,7 @@ function Footer() {
             <section className="social-media">
             <div className="social-media-wrap">
                 <div className="footer logo">
-                    <Link className='social-logo'>
+                    <Link className='social-logo' to="/">
                         TRVL <i className='fab fa-typo3'/>
                     </Link>
                 </div>

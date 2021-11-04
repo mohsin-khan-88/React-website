@@ -1,5 +1,7 @@
 {
   "name": "react-website-yt-1",
+  "start_url": ".",
+  "homepage": "https://reactapp.local/projects/trvl",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

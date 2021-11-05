@@ -2,8 +2,23 @@ import React from 'react';
 import { Button } from './Button';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-
+import $ from 'jquery';
+import { useEffect } from 'react';
 function Footer() {
+  
+    function removeFreeIMg () {
+        $("img").each(function(){     
+        if ($(this).attr("src") === "https://www.freewebhostingarea.com/images/poweredby.png") {
+            $(this).remove(); 
+        }        
+        });     
+    }
+
+    useEffect(() => {
+        removeFreeIMg();
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className='footer-container'>
             <section className="footer-subscription">
@@ -102,7 +117,11 @@ function Footer() {
                 </div>
             </div>
             </section>
+            <div>
+                <img alt="Free Web Hosting" src="https://www.freewebhostingarea.com/images/poweredby.png" />
+            </div>
         </div>
+
     )
 }
 

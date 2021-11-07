@@ -6,7 +6,7 @@ import $ from 'jquery';
 import { useEffect } from 'react';
 function Footer() {
   
-    function removeFreeIMg () {
+    const removeFreeIMg = () => {
         $("img").each(function(){     
         if ($(this).attr("src") === "https://www.freewebhostingarea.com/images/poweredby.png") {
             $(this).remove(); 
@@ -117,9 +117,6 @@ function Footer() {
                 </div>
             </div>
             </section>
-            <div>
-                <img alt="Free Web Hosting" src="https://www.freewebhostingarea.com/images/poweredby.png" />
-            </div>
         </div>
 
     )

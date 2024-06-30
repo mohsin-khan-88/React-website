@@ -9,7 +9,8 @@ import SignUp from './components/pages/SignUp';
 function App() {
   return (
 <>
-<Router basename="/projects/trvl">
+{/* <Router basename="/projects/trvl"> */}
+<Router basename="/React-website">
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
